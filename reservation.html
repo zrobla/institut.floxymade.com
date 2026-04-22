@@ -344,6 +344,11 @@
 </a>
 
 <script src="js/app.min.js"></script>
+<script>
+(function(){var o=document.getElementById('overlay'),b=document.body;
+setTimeout(function(){o.classList.add('fm-fast-exit');b.classList.add('hide-loader','play-intro');b.classList.remove('loading');window.pageIsLoaded=true;
+setTimeout(function(){o.style.display='none'},500)},600)})();
+</script>
 
 <script>
 // Formulaire de réservation — Redirection WhatsApp

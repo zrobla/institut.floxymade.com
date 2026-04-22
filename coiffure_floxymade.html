@@ -47,7 +47,7 @@
                     <li class="fm-nav-rdv"><a href="reservation.html">R&eacute;servation</a></li>
                 </ul>
             </nav>
-            <a class="reservation" href="tel:+2250705000091">R&eacute;servations &mdash; 07 05 00 00 91</a>
+            <a class="reservation" href="reservation.html">R&eacute;servations</a>
         </div>
     </header>
 
@@ -193,6 +193,11 @@
 </a>
 
 <script src="js/app.min.js"></script>
+<script>
+(function(){var o=document.getElementById('overlay'),b=document.body;
+setTimeout(function(){o.classList.add('fm-fast-exit');b.classList.add('hide-loader','play-intro');b.classList.remove('loading');window.pageIsLoaded=true;
+setTimeout(function(){o.style.display='none'},500)},600)})();
+</script>
 
 <script>/* No CanvasSlideshow on service pages */</script>
 <script>
