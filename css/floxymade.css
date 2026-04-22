@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
 /*--------------------------------------------------------------
-  FLOXY MADE - Override CSS
-  Adapte le template art4web pour l'identité visuelle FLOXY MADE
-  Miroir exact du template art4web : sections opaques + gaps
-  transparents révélant #woman en fixed background parallax zoom.
+  FLOXY MADE - Custom Styles
+  Identité visuelle FLOXY MADE — Institut de Beauté VIP, Abidjan
+  Conçu par TECH & WEB (tech-and-web.com)
 
-  Palette extraite du nouveau logo FLOXY MADE :
+  Palette :
   Brun taupe, Beige chaud, Crème, Accents dorés
 --------------------------------------------------------------*/
 
@@ -25,7 +24,7 @@
 
 /* ============================
    BODY
-   art4web: background-color #d2b7a6
+   Original: background-color #d2b7a6
    FLOXY MADE: warm beige matching logo palette
 ============================ */
 body.page-front,
@@ -122,7 +121,7 @@ html body {
 
 /* ============================
    INTRO / HERO SECTION
-   art4web: solid bg + CanvasSlideshow
+   Original: solid bg + CanvasSlideshow
    FLOXY MADE: solid bg + video background
 ============================ */
 .content-box.intro {
@@ -200,7 +199,7 @@ html body {
 
 /* ============================
    ABOUT SECTION
-   art4web: background #6a3332 (brown, opaque)
+   Original: background #6a3332 (brown)
    FLOXY MADE: warm taupe background
 ============================ */
 .content-box.about {
@@ -441,7 +440,7 @@ html body {
 
 /* ============================
    TREATMENTS SECTION
-   art4web: background #edc9bd (beige rose, opaque)
+   Original: background #edc9bd (beige rose)
    FLOXY MADE: warm cream
 ============================ */
 .content-box.treatments {
@@ -461,7 +460,7 @@ html body {
   border-bottom-color: var(--fm-taupe) !important;
 }
 
-/* Prestations grid 2x2 — extends art4web tab-js-menu */
+/* Prestations grid 2x2 — extends tab-js-menu */
 .fm-prestations-grid ul {
   display: flex !important;
   flex-wrap: wrap !important;
@@ -748,7 +747,7 @@ a.link::after {
 
 /* ============================
    FLOWERS PARALLAX
-   art4web: fixed background image separator
+   Parallax: fixed background image separator
 ============================ */
 .content-box.flowers-paralax {
   background-image: none !important;
@@ -757,7 +756,7 @@ a.link::after {
 
 /* ============================
    COSMETICS / PRODUCTS SECTION
-   art4web: background #1b4d4a (dark green, opaque)
+   Original: background #1b4d4a (dark green)
    FLOXY MADE: dark taupe — keeps the luxury feel
 ============================ */
 .content-box.cosmetics-sale {
@@ -774,7 +773,7 @@ a.link::after {
 
 /* ============================
    GIFT VOUCHER / CTA SECTION
-   art4web: background-image gift_bg.jpg
+   Background: gift_bg.jpg
 ============================ */
 .content-box.gift-voucher {
   background-image: none !important;
@@ -846,7 +845,7 @@ a.link::after {
 
 /* ============================
    FOOTER
-   art4web structure:
+   Layout structure:
    - .contact-section: #fbf0ec (opaque)
    - .scrolltop-section: transparent (#woman visible!)
    - .copyright-section: #572437 (opaque)
@@ -1080,7 +1079,7 @@ a.link::after {
 
 /* ============================
    HEADER
-   art4web: fixed left 50% on desktop, top bar on mobile
+   Header: fixed left 50% on desktop, top bar on mobile
 ============================ */
 .header {
   background-color: transparent !important;
@@ -1455,7 +1454,7 @@ a.link::after {
 
 /* ============================
    TEXT COLOR OVERRIDES
-   art4web brown #6a3332 → FLOXY MADE taupe
+   Original brown #6a3332 → FLOXY MADE taupe
 ============================ */
 .text-color-brown {
   color: var(--fm-taupe) !important;
