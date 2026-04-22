@@ -1,5 +1,8 @@
 jQuery(document).ready(function($) {
- 
+
+    // ==========================================
+    // Back to Top Button
+    // ==========================================
     $(window).scroll(function() {
         if ($(this).scrollTop() > 100) {
             $('.back-to-top').fadeIn('slow');
@@ -7,18 +10,33 @@ jQuery(document).ready(function($) {
             $('.back-to-top').fadeOut('slow');
         }
     });
+
     $('.back-to-top').click(function() {
         $('html, body').animate({
             scrollTop: 0
-        }, 1500, 'easeInOutExpo');
+        }, 1200, 'easeInOutExpo');
         return false;
     });
- 
+
+    // ==========================================
+    // Sticky Header with scroll effect
+    // ==========================================
     $("#header").sticky({
         topSpacing: 0,
         zIndex: '50'
     });
- 
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 50) {
+            $('#header').addClass('header-scrolled');
+        } else {
+            $('#header').removeClass('header-scrolled');
+        }
+    });
+
+    // ==========================================
+    // Intro Carousel (if used)
+    // ==========================================
     $("#intro-carousel").owlCarousel({
         autoplay: true,
         dots: false,
@@ -26,16 +44,28 @@ jQuery(document).ready(function($) {
         animateOut: 'fadeOut',
         items: 1
     });
- 
-    new WOW().init();
- 
+
+    // ==========================================
+    // WOW.js Scroll Animations
+    // ==========================================
+    new WOW({
+        offset: 80,
+        mobile: true
+    }).init();
+
+    // ==========================================
+    // Superfish Navigation
+    // ==========================================
     $('.nav-menu').superfish({
         animation: {
             opacity: 'show'
         },
         speed: 400
     });
- 
+
+    // ==========================================
+    // Mobile Navigation
+    // ==========================================
     if ($('#nav-menu-container').length) {
         var $mobile_nav = $('#nav-menu-container').clone().prop({
             id: 'mobile-nav'
@@ -74,7 +104,10 @@ jQuery(document).ready(function($) {
     } else if ($("#mobile-nav, #mobile-nav-toggle").length) {
         $("#mobile-nav, #mobile-nav-toggle").hide();
     }
- 
+
+    // ==========================================
+    // Smooth Scrolling for Anchors
+    // ==========================================
     $('.nav-menu a, #mobile-nav a, .scrollto').on('click', function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
@@ -91,7 +124,7 @@ jQuery(document).ready(function($) {
 
                 $('html, body').animate({
                     scrollTop: target.offset().top - top_space
-                }, 1500, 'easeInOutExpo');
+                }, 1200, 'easeInOutExpo');
 
                 if ($(this).parents('.nav-menu').length) {
                     $('.nav-menu .menu-active').removeClass('menu-active');
@@ -108,7 +141,9 @@ jQuery(document).ready(function($) {
         }
     });
 
- 
+    // ==========================================
+    // Portfolio Lightbox
+    // ==========================================
     $('.portfolio-popup').magnificPopup({
         type: 'image',
         removalDelay: 300,
@@ -118,18 +153,23 @@ jQuery(document).ready(function($) {
         },
         zoom: {
             enabled: true,
-            duration: 300,
+            duration: 400,
             easing: 'ease-in-out',
             opener: function(openerElement) {
                 return openerElement.is('img') ? openerElement : openerElement.find('img');
             }
         }
     });
- 
+
+    // ==========================================
+    // Testimonials / Social Carousel
+    // ==========================================
     $(".testimonials-carousel").owlCarousel({
         autoplay: true,
         dots: true,
         loop: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
         responsive: {
             0: {
                 items: 1
@@ -142,11 +182,15 @@ jQuery(document).ready(function($) {
             }
         }
     });
- 
+
+    // ==========================================
+    // Products/Clients Carousel
+    // ==========================================
     $(".clients-carousel").owlCarousel({
         autoplay: true,
         dots: true,
         loop: true,
+        autoplayTimeout: 3000,
         responsive: {
             0: {
                 items: 2
@@ -160,5 +204,18 @@ jQuery(document).ready(function($) {
         }
     });
 
+    // ==========================================
+    // Parallax-like effect on intro section
+    // ==========================================
+    $(window).scroll(function() {
+        var scrollTop = $(this).scrollTop();
+        var introHeight = $('#intro').outerHeight();
+        if (scrollTop < introHeight) {
+            $('#intro .intro-content').css({
+                'opacity': 1 - (scrollTop / introHeight) * 1.5,
+                'transform': 'translateY(' + (scrollTop * 0.3) + 'px)'
+            });
+        }
+    });
 
 });

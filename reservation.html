@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Prendre Rendez-vous | FLOXY MADE - Institut de Beaut&eacute; Abidjan</title>
+    <meta name="robots" content="all, follow">
+    <meta name="apple-mobile-web-app-title" content="FLOXY MADE - R&eacute;servation">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
+    <meta name="keywords" content="rendez-vous coiffure abidjan, reservation institut beaute, rdv floxy made, prise rdv salon beaute abidjan">
+    <meta name="description" content="Prenez rendez-vous en ligne chez FLOXY MADE, votre institut de beaut&eacute; VIP &agrave; Abidjan Cocody Angr&eacute;. Coiffure, onglerie, esth&eacute;tique, maquillage.">
+    <meta property="og:title" content="Prendre Rendez-vous | FLOXY MADE">
+    <meta property="og:locale" content="fr_CI">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FLOXY MADE">
+
+    <meta name="author" content="Tech &amp; Web - tech-and-web.com">
+    <link rel="shortcut icon" href="img/floxymade.ico">
+    <link rel="stylesheet" type="text/css" href="css/app.min.css">
+    <link rel="stylesheet" type="text/css" href="css/floxymade.css">
+</head>
+<body class="page-treatment">
+
+<div id="overlay">
+    <div class="load-container">
+        <div class="loading fm-logo-loader"><img src="img/logo-new-removebg.png" alt="FLOXY MADE"></div>
+    </div>
+</div>
+
+<div id="woman"></div>
+<div style="display: none;"><img id="hidden-woman" src="img/hiddden-woman.jpg"></div>
+
+<div id="page">
+    <header class="header" id="header">
+        <div class="content-wrapper">
+            <div class="logo"><a href="index.html"><img alt="FLOXY MADE" src="img/logo-new-removebg.png"></a></div>
+            <div class="mobile-burger" id="burger">
+                <div class="lines"><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div></div>
+            </div>
+            <nav class="navigation">
+                <ul class="nonelist">
+                    <li><a data-section-item="uvod" href="index.html#uvod">Accueil</a></li>
+                    <li><a data-section-item="o-salone" href="index.html#o-salone">Qui Sommes-Nous</a></li>
+                    <li><a data-section-item="osetrenia" href="index.html#osetrenia">Nos Services</a></li>
+                    <li><a data-section-item="predaj" href="perruques_floxymade.html">Nos Perruques</a></li>
+                    <li><a data-section-item="kontakt" href="index.html#kontakt">Contact</a></li>
+                    <li class="fm-nav-rdv"><a href="reservation.html">R&eacute;servation</a></li>
+                </ul>
+            </nav>
+            <a class="reservation" href="reservation.html">R&eacute;servations</a>
+        </div>
+    </header>
+
+    <div id="content" class="content">
+
+        <div class="content-box fm-reservation-page">
+            <div class="fm-reservation-container">
+
+                <div class="fm-reservation-header">
+                    <h1>Prendre Rendez-vous</h1>
+                    <p>Remplissez le formulaire ci-dessous et votre demande sera envoy&eacute;e directement sur notre WhatsApp pour confirmation rapide.</p>
+                </div>
+
+                <form id="fm-reservation-form" class="fm-reservation-form" novalidate>
+
+                    <!-- Informations personnelles -->
+                    <fieldset class="fm-fieldset">
+                        <legend><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Vos Informations</legend>
+                        <div class="fm-form-row">
+                            <div class="fm-form-group">
+                                <label for="fm-nom">Nom complet <span class="fm-required">*</span></label>
+                                <input type="text" id="fm-nom" name="nom" placeholder="Ex: Alice N'guessan" required>
+                            </div>
+                            <div class="fm-form-group">
+                                <label for="fm-tel">T&eacute;l&eacute;phone <span class="fm-required">*</span></label>
+                                <input type="tel" id="fm-tel" name="telephone" placeholder="Ex: 07 00 00 00 00" required>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Service souhaite -->
+                    <fieldset class="fm-fieldset">
+                        <legend><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Prestation Souhait&eacute;e</legend>
+                        <div class="fm-form-row">
+                            <div class="fm-form-group">
+                                <label for="fm-service">Cat&eacute;gorie <span class="fm-required">*</span></label>
+                                <select id="fm-service" name="service" required>
+                                    <option value="" disabled selected>-- Choisir un service --</option>
+                                    <optgroup label="Coiffure">
+                                        <option value="Coiffure - Tresses">Tresses</option>
+                                        <option value="Coiffure - Tissage">Tissage</option>
+                                        <option value="Coiffure - Crochet braids">Crochet braids</option>
+                                        <option value="Coiffure - Coupe &amp; brushing">Coupe &amp; Brushing</option>
+                                        <option value="Coiffure - Lissage">Lissage</option>
+                                        <option value="Coiffure - Coloration">Coloration</option>
+                                        <option value="Coiffure - Soins capillaires">Soins capillaires</option>
+                                        <option value="Coiffure - Autre">Coiffure &mdash; Autre</option>
+                                    </optgroup>
+                                    <optgroup label="Onglerie">
+                                        <option value="Onglerie - Pose capsules">Pose capsules</option>
+                                        <option value="Onglerie - Gel UV">Gel UV</option>
+                                        <option value="Onglerie - Manucure classique">Manucure classique</option>
+                                        <option value="Onglerie - P&eacute;dicure">P&eacute;dicure</option>
+                                        <option value="Onglerie - Nail art">Nail art</option>
+                                        <option value="Onglerie - D&eacute;pose &amp; soin">D&eacute;pose &amp; soin</option>
+                                        <option value="Onglerie - Autre">Onglerie &mdash; Autre</option>
+                                    </optgroup>
+                                    <optgroup label="Maquillage">
+                                        <option value="Maquillage - Maquillage jour">Maquillage jour</option>
+                                        <option value="Maquillage - Maquillage soir&eacute;e / &eacute;v&eacute;nement">Maquillage soir&eacute;e / &eacute;v&eacute;nement</option>
+                                        <option value="Maquillage - Maquillage mari&eacute;e">Maquillage mari&eacute;e</option>
+                                        <option value="Maquillage - Autre">Maquillage &mdash; Autre</option>
+                                    </optgroup>
+                                    <optgroup label="Perruques">
+                                        <option value="Perruques - Pose de perruque">Pose de perruque</option>
+                                        <option value="Perruques - Entretien perruque">Entretien perruque</option>
+                                        <option value="Perruques - Achat perruque">Achat perruque</option>
+                                        <option value="Perruques - Autre">Perruques &mdash; Autre</option>
+                                    </optgroup>
+                                    <optgroup label="Esth&eacute;tique">
+                                        <option value="Esth&eacute;tique - Soin visage">Soin visage</option>
+                                        <option value="Esth&eacute;tique - &Eacute;pilation">Epilation</option>
+                                        <option value="Esth&eacute;tique - Soin corps">Soin corps</option>
+                                        <option value="Esth&eacute;tique - Autre">Esth&eacute;tique &mdash; Autre</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="fm-form-group">
+                                <label for="fm-precision">Pr&eacute;cision sur la prestation (facultatif)</label>
+                                <input type="text" id="fm-precision" name="precision" placeholder="Ex : Tresses avec m&egrave;ches, couleur rouge&hellip;">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Date et heure -->
+                    <fieldset class="fm-fieldset">
+                        <legend><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM9 10H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2z"/></svg> Date &amp; Heure du Rendez-vous</legend>
+                        <div class="fm-form-row fm-form-row-3">
+                            <div class="fm-form-group">
+                                <label for="fm-jour">Jour <span class="fm-required">*</span></label>
+                                <select id="fm-jour" name="jour" required>
+                                    <option value="" disabled selected>Jour</option>
+                                </select>
+                            </div>
+                            <div class="fm-form-group">
+                                <label for="fm-mois">Mois <span class="fm-required">*</span></label>
+                                <select id="fm-mois" name="mois" required>
+                                    <option value="" disabled selected>Mois</option>
+                                    <option value="01">Janvier</option>
+                                    <option value="02">F&eacute;vrier</option>
+                                    <option value="03">Mars</option>
+                                    <option value="04">Avril</option>
+                                    <option value="05">Mai</option>
+                                    <option value="06">Juin</option>
+                                    <option value="07">Juillet</option>
+                                    <option value="08">Ao&ucirc;t</option>
+                                    <option value="09">Septembre</option>
+                                    <option value="10">Octobre</option>
+                                    <option value="11">Novembre</option>
+                                    <option value="12">D&eacute;cembre</option>
+                                </select>
+                            </div>
+                            <div class="fm-form-group">
+                                <label for="fm-annee">Ann&eacute;e <span class="fm-required">*</span></label>
+                                <select id="fm-annee" name="annee" required>
+                                    <option value="" disabled selected>Ann&eacute;e</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="fm-form-row">
+                            <div class="fm-form-group">
+                                <label for="fm-heure">Heure souhait&eacute;e <span class="fm-required">*</span></label>
+                                <select id="fm-heure" name="heure" required>
+                                    <option value="" disabled selected>-- Choisir l'heure --</option>
+                                    <option value="08h30">08h30</option>
+                                    <option value="09h00">09h00</option>
+                                    <option value="09h30">09h30</option>
+                                    <option value="10h00">10h00</option>
+                                    <option value="10h30">10h30</option>
+                                    <option value="11h00">11h00</option>
+                                    <option value="11h30">11h30</option>
+                                    <option value="12h00">12h00</option>
+                                    <option value="12h30">12h30</option>
+                                    <option value="13h00">13h00</option>
+                                    <option value="13h30">13h30</option>
+                                    <option value="14h00">14h00</option>
+                                    <option value="14h30">14h30</option>
+                                    <option value="15h00">15h00</option>
+                                    <option value="15h30">15h30</option>
+                                    <option value="16h00">16h00</option>
+                                    <option value="16h30">16h30</option>
+                                    <option value="17h00">17h00</option>
+                                    <option value="17h30">17h30</option>
+                                    <option value="18h00">18h00</option>
+                                    <option value="18h30">18h30</option>
+                                    <option value="19h00">19h00</option>
+                                </select>
+                            </div>
+                        </div>
+                        <p class="fm-form-hint"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg> Mardi - Samedi : 08h30 &ndash; 19h30 | Dimanche : 13h30 &ndash; 19h | Lundi : Ferm&eacute;</p>
+                    </fieldset>
+
+                    <!-- Nombre de personnes -->
+                    <fieldset class="fm-fieldset">
+                        <legend><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg> Informations Compl&eacute;mentaires</legend>
+                        <div class="fm-form-row">
+                            <div class="fm-form-group">
+                                <label for="fm-personnes">Nombre de personnes</label>
+                                <select id="fm-personnes" name="personnes">
+                                    <option value="1" selected>1 personne</option>
+                                    <option value="2">2 personnes</option>
+                                    <option value="3">3 personnes</option>
+                                    <option value="4">4 personnes</option>
+                                    <option value="5+">5 personnes ou plus</option>
+                                </select>
+                            </div>
+                            <div class="fm-form-group">
+                                <label for="fm-reference">Photo d'inspiration / r&eacute;f&eacute;rence</label>
+                                <select id="fm-reference" name="reference">
+                                    <option value="Non" selected>Non, pas de photo</option>
+                                    <option value="Oui, j'enverrai la photo sur WhatsApp">Oui, j'enverrai la photo sur WhatsApp</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="fm-form-row">
+                            <div class="fm-form-group fm-form-full">
+                                <label for="fm-notes">Message ou demande particuli&egrave;re (facultatif)</label>
+                                <textarea id="fm-notes" name="notes" rows="3" placeholder="Ex : Je viens avec une amie, allergie &agrave; certains produits, style souhait&eacute;&hellip;"></textarea>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Submit -->
+                    <div class="fm-form-submit">
+                        <button type="submit" id="fm-submit-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            Envoyer sur WhatsApp
+                        </button>
+                        <p class="fm-form-secure">Vos informations ne sont pas stock&eacute;es. Elles sont envoy&eacute;es directement via WhatsApp.</p>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="footer has-text-centered" data-section="kontakt" id="kontakt">
+            <div class="contact-section">
+                <div class="anim-wrapper" data-animation-scroll="mobile-mail">
+                    <div class="reset">
+                        <div class="phone left">
+                            <a class="contact link" href="tel:+2250705000091">(+225) 07 05 00 00 91</a>
+                            <span>WhatsApp</span>
+                        </div>
+                        <div class="email right">
+                            <a class="contact link" href="tel:+2250708010279">(+225) 07 08 01 02 79</a>
+                            <span>Informations</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="anim-wrapper" data-animation-scroll="where-to-find">
+                    <div class="reset">
+                        <div class="where-to-find left has-text-left m-t-40">
+                            <h2>O&ugrave; nous<br>trouver ?</h2>
+                        </div>
+                        <div class="address right">
+                            <a class="map-link" href="https://www.google.com/maps/place/FLOXY+MADE,+Abidjan+Cocody+Angr%C3%A9+8ieme+tranche/@5.4012616,-3.9780579,15z" target="_blank">
+                                <span class="space">FLOXY MADE<br>Cocody Angr&eacute;,<br>Pr&egrave;s Pharmacie 8&egrave;me Tranche<br>Abidjan, C&ocirc;te d'Ivoire</span>
+                                <span class="map"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="vertical-align:middle;margin-right:4px"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Google Maps</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scrolltop-section">
+                <div class="scroll-button scroll-top"><span></span></div>
+            </div>
+
+            <div class="copyright-section">
+                <div class="anim-wrapper" data-animation-scroll="copyright">
+                    <div class="fm-social-links">
+                        <a href="https://facebook.com/floxymade" target="_blank" rel="noopener" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="https://instagram.com/floxymade.ci" target="_blank" rel="noopener" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                        <a href="https://tiktok.com/@floxy_made" target="_blank" rel="noopener" aria-label="TikTok">
+                            <svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                        </a>
+                    </div>
+                    <div><span class="followus">Suivez-nous</span></div>
+                </div>
+                <div class="fm-since-wrapper">
+                    <div class="fm-since-ring"><img src="img/since.svg" alt="Since"></div>
+                    <span class="fm-since-year">2019</span>
+                </div>
+
+                <div class="anim-wrapper" data-animation-scroll="copy">
+                    <div class="copyright-wrapper">
+                        <div><span>&copy; 2026 FLOXY MADE | TOUS DROITS R&Eacute;SERV&Eacute;S.</span></div>
+                        <div class="fm-credit">Con&ccedil;u par <a href="https://tech-and-web.com" target="_blank" rel="noopener" title="Tech &amp; Web - Agence de conception web &agrave; Abidjan">Tech &amp; Web</a></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</div>
+
+<!-- Floating WhatsApp -->
+<a href="https://api.whatsapp.com/send?phone=+2250705000091" class="whatsapp-float" rel="noopener" aria-label="WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script src="js/app.min.js"></script>
+
+<script>
+// Formulaire de réservation — Redirection WhatsApp
+(function() {
+    var form = document.getElementById('fm-reservation-form');
+    if (!form) return;
+
+    var nomsMois = ['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre'];
+    var nomsJours = ['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+
+    var jourSel = document.getElementById('fm-jour');
+    var moisSel = document.getElementById('fm-mois');
+    var anneeSel = document.getElementById('fm-annee');
+    var heureSel = document.getElementById('fm-heure');
+
+    // Créneaux horaires selon le jour
+    // Mardi-Samedi : 08h30–19h00 | Dimanche : 13h30–19h00
+    var creneauxSemaine = [
+        '08h30','09h00','09h30','10h00','10h30','11h00','11h30',
+        '12h00','12h30','13h00','13h30','14h00','14h30','15h00',
+        '15h30','16h00','16h30','17h00','17h30','18h00','18h30','19h00'
+    ];
+    var creneauxDimanche = [
+        '13h30','14h00','14h30','15h00','15h30','16h00','16h30',
+        '17h00','17h30','18h00','18h30'
+    ];
+
+    // Nombre de jours dans un mois
+    function joursParMois(mois, annee) {
+        return new Date(annee, mois, 0).getDate();
+    }
+
+    // Remplir les jours selon le mois/année sélectionné
+    function remplirJours() {
+        var ancienneVal = jourSel.value;
+        var m = parseInt(moisSel.value) || (new Date().getMonth() + 1);
+        var y = parseInt(anneeSel.value) || new Date().getFullYear();
+        var nbJours = joursParMois(m, y);
+        var aujourdhui = new Date();
+        aujourdhui.setHours(0,0,0,0);
+
+        // Vider les options sauf le placeholder
+        while (jourSel.options.length > 1) jourSel.remove(1);
+
+        for (var d = 1; d <= nbJours; d++) {
+            var dateTest = new Date(y, m - 1, d);
+            // Bloquer les dates passées
+            if (dateTest < aujourdhui) continue;
+            // Bloquer les lundis (getDay() === 1)
+            if (dateTest.getDay() === 1) continue;
+
+            var opt = document.createElement('option');
+            opt.value = String(d).padStart(2, '0');
+            var nomJ = nomsJours[dateTest.getDay()];
+            opt.textContent = nomJ + ' ' + d;
+            jourSel.appendChild(opt);
+        }
+
+        // Restaurer la sélection si toujours valide
+        if (ancienneVal) {
+            jourSel.value = ancienneVal;
+            if (jourSel.value !== ancienneVal) jourSel.selectedIndex = 0;
+        }
+
+        mettreAJourHeures();
+    }
+
+    // Mettre à jour les créneaux horaires selon le jour sélectionné
+    function mettreAJourHeures() {
+        var ancienneHeure = heureSel.value;
+        var j = parseInt(jourSel.value);
+        var m = parseInt(moisSel.value);
+        var y = parseInt(anneeSel.value);
+
+        // Vider les options sauf le placeholder
+        while (heureSel.options.length > 1) heureSel.remove(1);
+
+        if (!j || !m || !y) {
+            // Pas de date sélectionnée : afficher tous les créneaux semaine par défaut
+            creneauxSemaine.forEach(function(c) {
+                var opt = document.createElement('option');
+                opt.value = c; opt.textContent = c;
+                heureSel.appendChild(opt);
+            });
+            return;
+        }
+
+        var dateObj = new Date(y, m - 1, j);
+        var estDimanche = dateObj.getDay() === 0;
+        var creneaux = estDimanche ? creneauxDimanche : creneauxSemaine;
+
+        // Si c'est aujourd'hui, bloquer les heures passées
+        var maintenant = new Date();
+        var estAujourdhui = (dateObj.getFullYear() === maintenant.getFullYear() &&
+                            dateObj.getMonth() === maintenant.getMonth() &&
+                            dateObj.getDate() === maintenant.getDate());
+
+        creneaux.forEach(function(c) {
+            if (estAujourdhui) {
+                var parts = c.split('h');
+                var hCreneau = parseInt(parts[0]) * 60 + parseInt(parts[1]);
+                var hMaintenant = maintenant.getHours() * 60 + maintenant.getMinutes();
+                if (hCreneau <= hMaintenant) return;
+            }
+            var opt = document.createElement('option');
+            opt.value = c; opt.textContent = c;
+            heureSel.appendChild(opt);
+        });
+
+        // Restaurer l'heure si toujours valide
+        if (ancienneHeure) {
+            heureSel.value = ancienneHeure;
+            if (heureSel.value !== ancienneHeure) heureSel.selectedIndex = 0;
+        }
+
+        // Si dimanche et aucun créneau dispo, notifier
+        if (heureSel.options.length <= 1 && estAujourdhui) {
+            var optVide = document.createElement('option');
+            optVide.value = ''; optVide.textContent = 'Plus de cr\u00e9neau disponible aujourd\'hui';
+            optVide.disabled = true;
+            heureSel.appendChild(optVide);
+        }
+    }
+
+    // Remplir les années (année en cours + suivante)
+    var anneeActuelle = new Date().getFullYear();
+    for (var a = anneeActuelle; a <= anneeActuelle + 1; a++) {
+        var opt2 = document.createElement('option');
+        opt2.value = a; opt2.textContent = a;
+        anneeSel.appendChild(opt2);
+    }
+
+    // Pré-sélectionner le mois et l'année en cours
+    var moisActuel = String(new Date().getMonth() + 1).padStart(2, '0');
+    moisSel.value = moisActuel;
+    anneeSel.value = anneeActuelle;
+
+    // Remplir les jours initialement
+    remplirJours();
+
+    // Recalculer quand la date change
+    jourSel.addEventListener('change', mettreAJourHeures);
+    moisSel.addEventListener('change', remplirJours);
+    anneeSel.addEventListener('change', remplirJours);
+
+    // Soumission du formulaire
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        var nom = document.getElementById('fm-nom').value.trim();
+        var tel = document.getElementById('fm-tel').value.trim();
+        var service = document.getElementById('fm-service').value;
+        var precision = document.getElementById('fm-precision').value.trim();
+        var jour = document.getElementById('fm-jour').value;
+        var mois = document.getElementById('fm-mois').value;
+        var annee = document.getElementById('fm-annee').value;
+        var heure = document.getElementById('fm-heure').value;
+        var personnes = document.getElementById('fm-personnes').value;
+        var reference = document.getElementById('fm-reference').value;
+        var notes = document.getElementById('fm-notes').value.trim();
+
+        if (!nom || !tel || !service || !jour || !mois || !annee || !heure) {
+            alert('Veuillez remplir tous les champs obligatoires marqu\u00e9s d\'un *');
+            return;
+        }
+
+        var dateObj = new Date(annee, parseInt(mois) - 1, parseInt(jour));
+
+        // Formater la date en français : "Mercredi 23 Avril 2026"
+        var nomJour = nomsJours[dateObj.getDay()];
+        var nomMois = nomsMois[parseInt(mois) - 1];
+        var dateFormatee = nomJour + ' ' + parseInt(jour) + ' ' + nomMois + ' ' + annee;
+
+        // Construire le message WhatsApp
+        var msg = '\u2728 *DEMANDE DE RENDEZ-VOUS \u2014 FLOXY MADE* \u2728\n\n';
+        msg += '\uD83D\uDC64 *Nom :* ' + nom + '\n';
+        msg += '\uD83D\uDCDE *T\u00e9l\u00e9phone :* ' + tel + '\n\n';
+        msg += '\uD83D\uDC87\u200D\u2640\uFE0F *Prestation :* ' + service + '\n';
+        if (precision) msg += '\uD83D\uDCDD *Pr\u00e9cision :* ' + precision + '\n';
+        msg += '\n\uD83D\uDCC5 *Date souhait\u00e9e :* ' + dateFormatee + '\n';
+        msg += '\uD83D\uDD50 *Heure :* ' + heure + '\n';
+        msg += '\uD83D\uDC65 *Nombre de personnes :* ' + personnes + '\n';
+        if (reference !== 'Non') msg += '\uD83D\uDCF8 *Photo d\'inspiration :* ' + reference + '\n';
+        if (notes) msg += '\n\uD83D\uDCAC *Message :* ' + notes + '\n';
+        msg += '\n_Merci de bien vouloir confirmer mon rendez-vous._ \uD83D\uDE4F';
+
+        var encoded = encodeURIComponent(msg);
+        var url = 'https://api.whatsapp.com/send?phone=+2250705000091&text=' + encoded;
+
+        window.open(url, '_blank');
+    });
+
+    // Animation menu mobile (domino) + close on click
+    var burger = document.getElementById('burger');
+    var nav = document.querySelector('.navigation');
+    if (burger && nav) {
+        function closeMenu() {
+            if (burger.classList.contains('close')) {
+                $(nav).fadeOut();
+                burger.classList.remove('close');
+            }
+        }
+        var observer = new MutationObserver(function() {
+            if (burger.classList.contains('close')) {
+                nav.classList.remove('fm-nav-visible');
+                void nav.offsetWidth;
+                nav.classList.add('fm-nav-visible');
+            } else {
+                nav.classList.remove('fm-nav-visible');
+            }
+        });
+        observer.observe(burger, { attributes: true, attributeFilter: ['class'] });
+        nav.querySelectorAll('a').forEach(function(a) {
+            a.addEventListener('click', function() { setTimeout(closeMenu, 150); });
+        });
+        document.addEventListener('click', function(e) {
+            if (!nav.contains(e.target) && !burger.contains(e.target)) closeMenu();
+        });
+    }
+})();
+</script>
+</body>
+</html>

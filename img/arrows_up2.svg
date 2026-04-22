@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="6px" height="30px" viewBox="0 0 6 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group 8</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HP" transform="translate(-1197.000000, -5688.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Body-2" transform="translate(391.000000, 450.000000)">
+                <g id="Body">
+                    <g id="Footer" transform="translate(409.000000, 5238.000000)">
+                        <g id="Scroll-to-Top" transform="translate(361.000000, 0.000000)">
+                            <g id="Group-4" transform="translate(36.000000, 0.000000)">
+                                <g id="Group-5">
+                                    <g id="Group-2">
+                                        <g id="Group-8">
+                                            <rect id="Rectangle" x="2" y="23" width="2" height="7" rx="1"></rect>
+                                            <polygon id="Triangle" points="3 20 6 24 0 24"></polygon>
+                                            <g id="Group-2">
+                                                <rect id="Rectangle" x="2" y="3" width="2" height="7" rx="1"></rect>
+                                                <polygon id="Triangle" points="3 0 6 4 0 4"></polygon>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
