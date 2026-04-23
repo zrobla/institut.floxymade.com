@@ -165,12 +165,42 @@ html body {
   }
 
   .content-box.intro .intro-subtitle {
-    margin: 0 0 10px !important;
-    padding-bottom: 10px !important;
+    margin: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .content-box.intro {
+    overflow: visible !important;
+  }
+
+  /* Coller intro à la section about (suppression de l'espace entre les deux) */
+  .content-box.about {
+    padding-top: 0 !important;
+  }
+
+  .content-box.about .top-section {
+    padding-top: 0 !important;
+  }
+
+  .content-box.about .top-section .anim-wrapper > p:first-child {
+    margin-top: 0 !important;
   }
 
   #mouse-scroll {
-    display: none !important;
+    position: absolute !important;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    width: 70px;
+    height: 70px;
+  }
+
+  .scroll-button.scroll-mouse {
+    position: relative !important;
+    top: 0 !important;
+    left: auto !important;
+    margin: 0 auto !important;
   }
 }
 
@@ -462,14 +492,16 @@ html body {
 
 /* Prestations grid 2x2 — extends tab-js-menu */
 .fm-prestations-grid ul {
-  display: flex !important;
-  flex-wrap: wrap !important;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
   margin: 47px 0 30px !important;
+  padding: 0 !important;
+  list-style: none !important;
 }
 
 .fm-prestations-grid ul li {
   float: none !important;
-  width: 50% !important;
+  width: auto !important;
   height: 60px !important;
   box-sizing: border-box !important;
   text-align: center !important;
@@ -3194,4 +3226,12 @@ a.link::after {
   color: var(--fm-gold, #c9a96e);
   letter-spacing: 2px;
   z-index: 2;
+}
+
+/* Override chemins d'images du bundle hérité art4web (/images/ -> /img/) */
+.shapeshifter {
+  background-image: url(../img/mouse_sprite.svg);
+}
+.scroll-button.scroll-top span {
+  background-image: url(../img/arrows_up2.svg);
 }
