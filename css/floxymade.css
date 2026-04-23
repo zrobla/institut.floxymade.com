@@ -798,6 +798,13 @@ a.link::after {
 ============================ */
 .content-box.cosmetics-sale {
   background-color: var(--fm-taupe) !important;
+  padding-bottom: 45px !important;
+}
+
+@media screen and (max-width: 1025px) {
+  .content-box.cosmetics-sale {
+    padding-bottom: 35px !important;
+  }
 }
 
 .content-box.cosmetics-sale h2 {
@@ -3231,6 +3238,83 @@ a.link::after {
   color: var(--fm-gold, #c9a96e);
   letter-spacing: 2px;
   z-index: 2;
+}
+
+/* ============================
+   CTA Premium — Voir toute la collection (homepage perruques)
+============================ */
+.fm-perruques-cta-wrapper {
+  text-align: center;
+  margin: 12px 0 0;
+  padding: 0 20px;
+}
+
+.fm-perruques-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 22px;
+  border: 1px solid var(--fm-gold);
+  background: transparent;
+  color: var(--fm-gold) !important;
+  font-family: 'Georgia', 'Playfair Display', serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  transition: color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease, transform 0.4s ease;
+  box-shadow: 0 3px 14px rgba(201, 169, 110, 0.15);
+}
+
+.fm-perruques-cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--fm-gold) 0%, #d9b87f 100%);
+  transform: translateX(-101%);
+  transition: transform 0.45s cubic-bezier(0.65, 0, 0.35, 1);
+  z-index: -1;
+}
+
+.fm-perruques-cta:hover {
+  color: #fff !important;
+  border-color: #d9b87f;
+  box-shadow: 0 10px 35px rgba(201, 169, 110, 0.45);
+  transform: translateY(-3px);
+}
+
+.fm-perruques-cta:hover::before {
+  transform: translateX(0);
+}
+
+.fm-perruques-cta svg {
+  flex-shrink: 0;
+  transition: transform 0.4s ease;
+}
+
+.fm-perruques-cta:hover svg {
+  transform: translateX(5px);
+}
+
+@media screen and (max-width: 480px) {
+  .fm-perruques-cta-wrapper {
+    margin: 8px 0 0;
+  }
+  .fm-perruques-cta {
+    padding: 8px 18px;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    gap: 8px;
+  }
+  .fm-perruques-cta svg {
+    width: 14px;
+    height: 10px;
+  }
 }
 
 /* Override chemins d'images du bundle hérité art4web (/images/ -> /img/) */
