@@ -534,7 +534,7 @@ html body {
 .fm-prestations-grid ul li:nth-child(3) span { border-right: none !important; border-top: none !important; }
 .fm-prestations-grid ul li:nth-child(4) span { border-left: none !important; border-top: none !important; }
 
-/* Ligne verticale centrale */
+/* Ligne verticale centrale (entre col 1 et col 2) */
 .fm-prestations-grid ul li:nth-child(odd) span::after {
   content: '' !important;
   width: 1px !important;
@@ -543,10 +543,10 @@ html body {
   background: var(--fm-taupe) !important;
   position: absolute !important;
   right: 0 !important;
-  opacity: 0.3 !important;
+  opacity: 0.75 !important;
 }
 
-/* Ligne horizontale centrale */
+/* Ligne horizontale centrale (entre row 1 et row 2) */
 .fm-prestations-grid ul li:nth-child(1) span::before,
 .fm-prestations-grid ul li:nth-child(2) span::before {
   content: '' !important;
@@ -556,9 +556,14 @@ html body {
   bottom: -1px !important;
   background: var(--fm-taupe) !important;
   position: absolute !important;
-  opacity: 0.3 !important;
+  opacity: 0.75 !important;
   width: auto !important;
   display: block !important;
+}
+
+/* Bordures externes plus marquées pour cadrer la grille */
+.fm-prestations-grid ul li span {
+  border-color: rgba(123, 93, 83, 0.65) !important;
 }
 
 /* Hover */
