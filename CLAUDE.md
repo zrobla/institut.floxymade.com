@@ -49,8 +49,8 @@ When adding a new page or product, replicate this whole header block and update 
 These appear in multiple pages and must stay in sync if changed:
 - Phone: `+225 07 05 00 00 91`
 - Email: `contact@floxymade.com`
-- Address: `Cocody Angré, Près Pharmacie 8ème Tranche, Abidjan`
-- Geo: `5.4012616, -3.9780579`
+- Address: `Cocody Angré, Près de la Pharmacie 8ème Tranche, Abidjan`
+- Geo: `5.4012616, -3.9806328`
 - Hours: Tue–Sat 08:30–19:30, Sun 13:30–19:00, **closed Monday**
 - Socials: facebook.com/floxymade, instagram.com/floxymade.ci, tiktok.com/@floxy_made
 - Currency for all prices: XOF

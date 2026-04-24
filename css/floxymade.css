@@ -3661,62 +3661,6 @@ a.link::after {
 }
 
 /* ============================
-   Bloc adresse + carte Google Maps embed
-   Utilisé dans le footer de toutes les pages (index + services + perruques + reservation)
-============================ */
-.fm-address-block {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  align-items: flex-start;
-}
-
-.fm-address-block .fm-address-text {
-  display: block;
-  line-height: 1.6;
-}
-
-.fm-map-embed {
-  width: 100%;
-  border-radius: 6px;
-  overflow: hidden;
-  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.18);
-  border: 1px solid rgba(243, 220, 164, 0.35);
-  background: rgba(123, 93, 83, 0.1);
-}
-
-.fm-map-embed iframe {
-  display: block;
-  width: 100%;
-  height: 280px;
-  border: 0;
-  filter: saturate(0.95);
-}
-
-.fm-address-block .map-link {
-  display: inline-flex;
-  align-items: center;
-  text-decoration: none;
-  transition: opacity 0.3s ease;
-}
-
-.fm-address-block .map-link:hover {
-  opacity: 0.75;
-}
-
-@media screen and (max-width: 1025px) {
-  .fm-map-embed iframe {
-    height: 240px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .fm-map-embed iframe {
-    height: 200px;
-  }
-}
-
-/* ============================
    Logo signature au pied de la section Nos Prestations
    Position absolue dans le padding-bottom existant — n'affecte pas la hauteur de la section
 ============================ */
