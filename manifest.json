@@ -1,0 +1,46 @@
+{
+  "name": "FLOXY MADE — Institut de Beauté VIP à Abidjan",
+  "short_name": "FLOXY MADE",
+  "description": "Institut de beauté VIP à Abidjan Cocody Angré. Coiffure, onglerie, esthétique, maquillage et perruques Lace Front premium.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#7b5d53",
+  "theme_color": "#7b5d53",
+  "lang": "fr-CI",
+  "dir": "ltr",
+  "categories": ["beauty", "lifestyle", "shopping"],
+  "icons": [
+    {
+      "src": "/img/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/img/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/img/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Réserver un rendez-vous",
+      "url": "/reservation.html",
+      "description": "Prendre rendez-vous en ligne chez FLOXY MADE"
+    },
+    {
+      "name": "Nos perruques Lace Front",
+      "url": "/perruques_floxymade.html",
+      "description": "Découvrir la collection de perruques premium"
+    }
+  ]
+}

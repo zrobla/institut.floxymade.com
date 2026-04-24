@@ -1,5 +1,72 @@
-User-Agent: *
-Crawl-delay : 60
-Disallow : /*calendar*
-Disallow : /*guestbook*
+# robots.txt — FLOXY MADE, Institut de Beauté VIP à Abidjan
+# Conception : Tech & Web (tech-and-web.com)
 
+User-Agent: *
+Allow: /
+Crawl-delay: 30
+Disallow: /*calendar*
+Disallow: /*guestbook*
+
+# Autoriser explicitement les crawlers IA (Perplexity, OpenAI, Anthropic, Google-Extended)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /img/
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+Sitemap: https://floxymade.com/sitemap.xml
+Host: floxymade.com

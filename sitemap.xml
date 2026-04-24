@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://floxymade.com/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://floxymade.com/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://floxymade.com/"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://floxymade.com/img/logo-new-removebg.png</image:loc>
+      <image:title>FLOXY MADE - Institut de Beauté VIP à Abidjan</image:title>
+      <image:caption>Logo FLOXY MADE - Institut de beauté VIP à Cocody Angré, Abidjan, Côte d'Ivoire</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://floxymade.com/coiffure_floxymade.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://floxymade.com/onglerie_floxymade.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://floxymade.com/esthetique_floxymade.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://floxymade.com/perruques_floxymade.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://floxymade.com/reservation.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://floxymade.com/perruque-body-wave-noire.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://floxymade.com/img/produits/body-wave-noire.jpg</image:loc>
+      <image:title>Perruque Body Wave Noire - Lace Front Premium FLOXY MADE</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://floxymade.com/perruque-bob-wave-noire.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://floxymade.com/img/produits/bob-wave-noire.jpg</image:loc>
+      <image:title>Perruque Bob Wave Noire - Lace Front Premium FLOXY MADE</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://floxymade.com/perruque-bob-lisse-blonde.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://floxymade.com/img/produits/bob-lisse-blonde.jpg</image:loc>
+      <image:title>Perruque Bob Lisse Blonde - Lace Front Premium FLOXY MADE</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://floxymade.com/perruque-bob-lisse-caramel.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://floxymade.com/img/produits/bob-lisse-caramel.jpg</image:loc>
+      <image:title>Perruque Bob Lisse Caramel - Lace Front Premium FLOXY MADE</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://floxymade.com/perruque-bob-highlights.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://floxymade.com/img/produits/bob-highlights.jpg</image:loc>
+      <image:title>Perruque Bob Highlights - Lace Front Premium FLOXY MADE</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://floxymade.com/perruque-curly-auburn.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://floxymade.com/img/produits/curly-auburn.jpg</image:loc>
+      <image:title>Perruque Curly Auburn - Lace Front Premium FLOXY MADE</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://floxymade.com/perruque-curly-bordeaux.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://floxymade.com/img/produits/curly-bordeaux.jpg</image:loc>
+      <image:title>Perruque Curly Bordeaux - Lace Front Premium FLOXY MADE</image:title>
+    </image:image>
+  </url>
+
+</urlset>

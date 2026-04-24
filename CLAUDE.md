@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-Static marketing site for **FLOXY MADE**, an institut de beauté in Abidjan Cocody (Côte d'Ivoire). Site is in French (`lang="fr"`, locale `fr_CI`), prices in XOF. Production URL: `https://institut.floxymade.com`. Built and maintained by the agency **Tech & Web** (`tech-and-web.com`).
+Static marketing site for **FLOXY MADE**, an institut de beauté in Abidjan Cocody (Côte d'Ivoire). Site is in French (`lang="fr"`, locale `fr_CI`), prices in XOF. Production URL: `https://floxymade.com`. Built and maintained by the agency **Tech & Web** (`tech-and-web.com`).
 
 ## Commands
 
@@ -14,7 +14,7 @@ No build pipeline, no package manager, no tests. To preview locally:
 python3 -m http.server 8080
 ```
 
-Deployment is by FTP upload to `ftp.floxymade.com` (the live host serves files from the root of `institut.floxymade.com`). Always confirm before pushing — the user runs deploys manually.
+Deployment is by FTP upload to `ftp.floxymade.com` (the live host serves files from the root of `floxymade.com`). Always confirm before pushing — the user runs deploys manually.
 
 ## Architecture
 
@@ -61,7 +61,7 @@ These appear in multiple pages and must stay in sync if changed:
 - [img/services/](img/services/), [img/portfolio/](img/portfolio/), [img/clients/](img/clients/), [img/intro-carousel/](img/intro-carousel/) — section-specific.
 - [img/new-images/](img/new-images/), [img/new-images-2/](img/new-images-2/) — staging folders for asset batches the user is sorting through; don't assume contents are in use.
 
-The additional working directories `/home/kayz/ss.art4web.co/images` and `/home/kayz/Documents/FROM MACBOOK/institut.floxymade.com/img/new-images-2` are sources the user pulls assets *from* — read-only reference, not part of the deployed site.
+The additional working directories `/home/kayz/ss.art4web.co/images` and `/home/kayz/Documents/FROM MACBOOK/floxymade.com/img/new-images-2` are sources the user pulls assets *from* — read-only reference, not part of the deployed site.
 
 ### robots.txt
 [robots.txt](robots.txt) sets `Crawl-delay: 60` and disallows `/*calendar*` and `/*guestbook*`. There is no sitemap.xml currently.
